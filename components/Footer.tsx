@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-beige border-t border-sand mt-24">
       <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
         <div>
-          <h3 className="font-serif text-lg text-espresso mb-3">
+          <h3 className="font-serif text-lg text-wood mb-3">
             Modern Circle
           </h3>
           <p className="text-sm text-coffee leading-relaxed max-w-xs">
@@ -25,7 +25,7 @@ export default function Footer() {
             <br />
             <a
               href="tel:+21629379400"
-              className="hover:text-espresso transition-colors"
+              className="hover:text-wood transition-colors"
             >
               29 379 400
             </a>
@@ -40,7 +40,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/admin-login"
-                className="text-coffee hover:text-espresso transition-colors"
+                className="text-coffee hover:text-wood transition-colors"
               >
                 Admin Login
               </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/employee-login"
-                className="text-coffee hover:text-espresso transition-colors"
+                className="text-coffee hover:text-wood transition-colors"
               >
                 Employee Login
               </Link>

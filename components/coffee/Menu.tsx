@@ -10,7 +10,7 @@ export default function Menu() {
           <p className="text-xs tracking-[0.3em] uppercase text-mocha mb-4">
             The Menu
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl text-espresso leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-wood leading-tight">
             Brunch, pastries & specialty coffee.
           </h2>
           <p className="mt-5 text-coffee leading-relaxed">
@@ -21,7 +21,7 @@ export default function Menu() {
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {menuItems.map((item, idx) => (
             <FadeIn key={item.id} delay={idx * 0.04} as="li">
-              <article className="bg-cream overflow-hidden border border-sand hover:bg-sand/40 transition-colors h-full flex flex-col">
+              <article className="bg-linen overflow-hidden border border-sand hover:bg-sand/40 transition-colors h-full flex flex-col">
                 <div className="relative aspect-[4/3] w-full">
                   <Image
                     src={item.image}
@@ -33,7 +33,7 @@ export default function Menu() {
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-baseline justify-between gap-4">
-                    <h3 className="font-serif text-xl text-espresso">
+                    <h3 className="font-serif text-xl text-wood">
                       {item.name}
                     </h3>
                     <span className="text-sm text-coffee whitespace-nowrap">

@@ -25,7 +25,7 @@ export default function CartClient() {
             className="w-8 h-8 text-mocha mx-auto mb-6"
             strokeWidth={1.25}
           />
-          <h1 className="font-serif text-3xl text-espresso">
+          <h1 className="font-serif text-3xl text-wood">
             Your cart is empty.
           </h1>
           <p className="mt-4 text-coffee">
@@ -50,7 +50,7 @@ export default function CartClient() {
           <p className="text-xs tracking-[0.3em] uppercase text-mocha mb-4">
             Your Cart
           </p>
-          <h1 className="font-serif text-3xl md:text-4xl text-espresso">
+          <h1 className="font-serif text-3xl md:text-4xl text-wood">
             {totalItems} {totalItems === 1 ? "item" : "items"}
           </h1>
         </FadeIn>
@@ -75,7 +75,7 @@ export default function CartClient() {
                       <p className="text-[11px] tracking-widest uppercase text-mocha">
                         {item.category}
                       </p>
-                      <h3 className="font-serif text-lg text-espresso mt-0.5">
+                      <h3 className="font-serif text-lg text-wood mt-0.5">
                         {item.name}
                       </h3>
                     </div>
@@ -99,7 +99,7 @@ export default function CartClient() {
                       >
                         <Minus className="w-3.5 h-3.5" strokeWidth={1.5} />
                       </button>
-                      <span className="w-8 text-center text-sm text-espresso">
+                      <span className="w-8 text-center text-sm text-wood">
                         {item.quantity}
                       </span>
                       <button
@@ -112,7 +112,7 @@ export default function CartClient() {
                       </button>
                     </div>
 
-                    <p className="text-sm text-espresso">
+                    <p className="text-sm text-wood">
                       {item.price * item.quantity} TND
                     </p>
                   </div>
@@ -122,20 +122,20 @@ export default function CartClient() {
           </ul>
 
           <aside className="bg-beige border border-sand p-6">
-            <h2 className="font-serif text-xl text-espresso">Summary</h2>
+            <h2 className="font-serif text-xl text-wood">Summary</h2>
 
             <dl className="mt-5 space-y-3 text-sm">
               <div className="flex justify-between">
                 <dt className="text-coffee">Subtotal</dt>
-                <dd className="text-espresso">{totalPrice} TND</dd>
+                <dd className="text-wood">{totalPrice} TND</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-coffee">Shipping</dt>
                 <dd className="text-mocha">Calculated at checkout</dd>
               </div>
               <div className="border-t border-sand pt-3 flex justify-between text-base">
-                <dt className="text-espresso">Total</dt>
-                <dd className="text-espresso">{totalPrice} TND</dd>
+                <dt className="text-wood">Total</dt>
+                <dd className="text-wood">{totalPrice} TND</dd>
               </div>
             </dl>
 
@@ -149,14 +149,14 @@ export default function CartClient() {
             <button
               type="button"
               onClick={clearCart}
-              className="mt-3 w-full py-3 text-sm tracking-wide bg-cream text-coffee border border-sand hover:bg-sand/40 transition-colors"
+              className="mt-3 w-full py-3 text-sm tracking-wide bg-linen text-coffee border border-sand hover:bg-sand/40 transition-colors"
             >
               Clear cart
             </button>
 
             <Link
               href="/boutique"
-              className="mt-4 block text-center text-xs tracking-widest uppercase text-mocha hover:text-espresso transition-colors"
+              className="mt-4 block text-center text-xs tracking-widest uppercase text-mocha hover:text-wood transition-colors"
             >
               Continue shopping
             </Link>

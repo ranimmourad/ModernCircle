@@ -32,7 +32,7 @@ export default function BoutiqueClient() {
           <p className="text-xs tracking-[0.3em] uppercase text-mocha mb-4">
             The Concept Store
           </p>
-          <h1 className="font-serif text-3xl md:text-5xl text-espresso leading-tight">
+          <h1 className="font-serif text-3xl md:text-5xl text-wood leading-tight">
             Quietly curated, made by hand.
           </h1>
           <p className="mt-5 text-coffee leading-relaxed">
@@ -55,7 +55,7 @@ export default function BoutiqueClient() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search products"
-                className="w-full pl-10 pr-4 py-2.5 bg-cream border border-sand text-sm text-espresso placeholder:text-mocha focus:outline-none focus:border-espresso transition-colors"
+                className="w-full pl-10 pr-4 py-2.5 bg-linen border border-sand text-sm text-wood placeholder:text-mocha focus:outline-none focus:border-espresso transition-colors"
               />
             </label>
 
@@ -70,7 +70,7 @@ export default function BoutiqueClient() {
                     className={`px-4 py-2 text-xs tracking-wide border transition-colors ${
                       active
                         ? "bg-espresso text-cream border-espresso"
-                        : "bg-cream text-coffee border-sand hover:bg-beige"
+                        : "bg-linen text-coffee border-sand hover:bg-beige"
                     }`}
                   >
                     {c}

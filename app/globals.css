@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #FAF8F5;
-  --foreground: #3E2723;
+  --background: #F3EFE8;
+  --foreground: #4A3728;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -16,7 +19,7 @@ body {
 }
 
 ::selection {
-  background-color: #A3B18A;
+  background-color: #8FA78F; /* Botanical green */
   color: #FAF8F5;
 }
 
@@ -26,12 +29,30 @@ body {
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1ECE3;
+  background: #EAE6E1; /* Marble */
 }
 ::-webkit-scrollbar-thumb {
-  background: #8B6F5C;
+  background: #6B5744; /* Bark */
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #5D4037;
+  background: #4A3728; /* Wood */
+}
+
+/* Warm shadows instead of harsh AI shadows */
+@layer utilities {
+  .shadow-warm {
+    box-shadow: 0 4px 15px -3px rgba(74, 55, 40, 0.08), 0 2px 6px -2px rgba(74, 55, 40, 0.05);
+  }
+  .shadow-warm-md {
+    box-shadow: 0 10px 25px -5px rgba(74, 55, 40, 0.1), 0 8px 10px -6px rgba(74, 55, 40, 0.05);
+  }
+}
+
+/* Smooth hover for product cards */
+img {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+img:hover {
+  transform: scale(1.02);
 }

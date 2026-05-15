@@ -26,7 +26,7 @@ export default function Reviews() {
           <p className="text-xs tracking-[0.3em] uppercase text-mocha mb-4">
             Kind Words
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl text-espresso leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-wood leading-tight">
             What our guests say.
           </h2>
         </FadeIn>
@@ -42,7 +42,7 @@ export default function Reviews() {
                 <blockquote className="text-coffee leading-relaxed text-[15px] flex-1">
                   {r.quote}
                 </blockquote>
-                <figcaption className="mt-6 text-sm text-espresso">
+                <figcaption className="mt-6 text-sm text-wood">
                   — {r.author}
                 </figcaption>
               </figure>

@@ -28,7 +28,7 @@ export default function About() {
           <p className="text-xs tracking-[0.3em] uppercase text-mocha mb-4">
             Our Space
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl text-espresso leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-wood leading-tight">
             A quiet circle in El Mourouj.
           </h2>
           <p className="mt-6 text-coffee leading-relaxed">
@@ -49,7 +49,7 @@ export default function About() {
                   className="w-5 h-5 text-sage mb-3"
                   strokeWidth={1.5}
                 />
-                <p className="text-sm font-medium text-espresso">{v.title}</p>
+                <p className="text-sm font-medium text-wood">{v.title}</p>
                 <p className="text-xs text-coffee mt-1 leading-relaxed">
                   {v.text}
                 </p>

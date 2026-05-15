@@ -9,7 +9,7 @@ export default function Contact() {
           <p className="text-xs tracking-[0.3em] uppercase text-mocha mb-4">
             Visit
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl text-espresso leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-wood leading-tight">
             Find us in El Mourouj.
           </h2>
           <p className="mt-5 text-coffee leading-relaxed max-w-md">
@@ -26,7 +26,7 @@ export default function Contact() {
                 strokeWidth={1.5}
               />
               <div>
-                <p className="text-sm font-medium text-espresso">Address</p>
+                <p className="text-sm font-medium text-wood">Address</p>
                 <p className="text-sm text-coffee leading-relaxed">
                   Av. Martyrs, Résidence Nermine
                   <br />
@@ -41,10 +41,10 @@ export default function Contact() {
                 strokeWidth={1.5}
               />
               <div>
-                <p className="text-sm font-medium text-espresso">Phone</p>
+                <p className="text-sm font-medium text-wood">Phone</p>
                 <a
                   href="tel:+21629379400"
-                  className="text-sm text-coffee hover:text-espresso transition-colors"
+                  className="text-sm text-coffee hover:text-wood transition-colors"
                 >
                   29 379 400
                 </a>
@@ -57,7 +57,7 @@ export default function Contact() {
                 strokeWidth={1.5}
               />
               <div>
-                <p className="text-sm font-medium text-espresso">Hours</p>
+                <p className="text-sm font-medium text-wood">Hours</p>
                 <p className="text-sm text-coffee leading-relaxed">
                   Open daily — please call ahead for current hours.
                 </p>

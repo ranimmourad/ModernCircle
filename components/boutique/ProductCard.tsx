@@ -7,7 +7,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
 
   return (
-    <article className="bg-cream border border-sand overflow-hidden flex flex-col h-full hover:bg-sand/40 transition-colors">
+    <article className="bg-linen border border-sand overflow-hidden flex flex-col h-full hover:bg-sand/40 transition-colors">
       <div className="relative aspect-[4/5] w-full bg-beige">
         <Image
           src={product.image}
@@ -22,7 +22,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-[11px] tracking-widest uppercase text-mocha">
           {product.category}
         </p>
-        <h3 className="font-serif text-lg text-espresso mt-1">
+        <h3 className="font-serif text-lg text-wood mt-1">
           {product.name}
         </h3>
 
@@ -33,7 +33,7 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
 
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-sm text-espresso">{product.price} TND</span>
+          <span className="text-sm text-wood">{product.price} TND</span>
           <span
             className={`text-xs tracking-wide ${
               product.inStock ? "text-sage" : "text-mocha"

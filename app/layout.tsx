@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
@@ -11,9 +11,9 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-lora",
   display: "swap",
 });
 
@@ -27,8 +27,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans bg-cream text-espresso min-h-screen flex flex-col">
+    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+      <body className="font-sans bg-linen text-wood min-h-screen flex flex-col">
         <CartProvider>
           <Navbar />
           <main className="flex-1">{children}</main>

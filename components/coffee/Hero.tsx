@@ -41,13 +41,13 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="#menu"
-              className="inline-flex items-center px-5 py-3 text-sm tracking-wide bg-cream text-espresso hover:bg-beige transition-colors"
+              className="inline-flex items-center px-5 py-3 text-sm tracking-wide bg-linen text-wood hover:bg-beige transition-colors"
             >
               View the Menu
             </Link>
             <Link
               href="/boutique"
-              className="inline-flex items-center px-5 py-3 text-sm tracking-wide border border-cream text-cream hover:bg-cream/10 transition-colors"
+              className="inline-flex items-center px-5 py-3 text-sm tracking-wide border border-cream text-cream hover:bg-linen/10 transition-colors"
             >
               The Concept Store
             </Link>

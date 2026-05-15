@@ -8,7 +8,7 @@ export default function LoginPlaceholder({ title }: { title: string }) {
         <div className="inline-flex w-12 h-12 items-center justify-center bg-beige border border-sand mb-6">
           <Lock className="w-5 h-5 text-coffee" strokeWidth={1.5} />
         </div>
-        <h1 className="font-serif text-3xl text-espresso">{title}</h1>
+        <h1 className="font-serif text-3xl text-wood">{title}</h1>
         <p className="mt-4 text-coffee">Login Coming Soon</p>
         <Link
           href="/"
